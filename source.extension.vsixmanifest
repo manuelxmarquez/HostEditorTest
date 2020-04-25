@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="HostEditorTest.b3454b05-ae7d-4a9d-9d07-257c523b9012" Version="0.0" Language="en-CA" Publisher="HostEditorTest" />
+        <DisplayName>HostEditorTest</DisplayName>
+        <Description xml:space="preserve">HostEditorTest Project.</Description>
+    </Metadata>
+    <Installation>
+      <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0,17.0)" />
+      <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[16.0,17.0)" />
+      <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[16.0,17.0)" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.7.2,)" />
+    </Dependencies>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+    </Assets>
+</PackageManifest>
